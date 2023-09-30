@@ -1,13 +1,8 @@
 import robospeak as rs
 
-log = None
-discord = None
+from xander_plugin import *
 
-def onload(obj):
-    global log
-    global discord
-    log = obj["log"]
-    discord = obj["discord"]
+def onload():
     log("Robot plugin loaded")
 
 async def onmessage(message):

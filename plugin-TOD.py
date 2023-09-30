@@ -1,21 +1,12 @@
 import os
 import random
-
-
-discord = None
-log = None
+from xander_plugin import *
 
 truthlist = []
 darelist = []
-def onload(obj):
-    global discord
-    global log
+def onload():
     global truthlist
     global darelist
-
-
-    discord = obj["discord"]
-    log = obj["log"]
 
     f = open(os.path.join("config", "truth.txt"), "r")
     truthlist = f.readlines()

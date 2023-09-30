@@ -1,10 +1,7 @@
-log = None
-discord = None
-def onload(obj):
-    global log
-    global discord
-    log = obj["log"]
-    discord = obj["discord"]
+from xander_plugin import *
+
+
+def onload():
     log("T-T virus plugin loaded")
 
 

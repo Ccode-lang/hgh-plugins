@@ -1,13 +1,7 @@
 import random
+from xander_plugin import *
 
-log = None
-discord = None
-
-def onload(obj):
-    global log
-    global discord
-    log = obj["log"]
-    discord = obj["discord"]
+def onload():
     log("Slime gun plugin loaded")
     
 allowed_users = [993653933148995604, 837119081790046228, 886878726686666752]

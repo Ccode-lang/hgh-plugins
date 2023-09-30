@@ -1,12 +1,8 @@
 import uwuify
+from xander_plugin import *
 
-log = None
-discord = None
-def onload(obj):
-    global log
-    global discord
-    log = obj["log"]
-    discord = obj["discord"]
+
+def onload():
     log("UwU virus plugin loaded")
 
 
