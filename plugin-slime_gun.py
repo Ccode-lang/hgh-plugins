@@ -10,7 +10,10 @@ async def onmessage(message):
     if message.content.startswith("!slime "): # and message.author.id in allowed_users
         gif = gifs[random.randint(0, len(gifs) - 1)]
         try:
-            await message.channel.send(f"{message.mentions[0].mention} was slimed!")
+            if config.platform == "discord":
+                await message.channel.send(f"{message.mentions[0].mention} was slimed!")
+            else:
+                await message.channel.send(f"{message.mentions[0].name} was slimed!")
             await message.channel.send(gif)
             return False
         except:
