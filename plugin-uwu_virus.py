@@ -3,6 +3,7 @@ from xander_plugin import *
 
 
 def onload():
+    help_menu_edit("T-T virus plugin", "A plugin that spreads the T-T virus.")
     log("UwU virus plugin loaded")
 
 

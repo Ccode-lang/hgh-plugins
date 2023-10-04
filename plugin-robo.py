@@ -3,6 +3,7 @@ import robospeak as rs
 from xander_plugin import *
 
 def onload():
+    help_menu_edit("!robo", "A command that changes the given input into robot language. (Only works in a dm with the bot)")
     log("Robot plugin loaded")
 
 async def onmessage(message):

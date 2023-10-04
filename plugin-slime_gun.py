@@ -2,6 +2,7 @@ import random
 from xander_plugin import *
 
 def onload():
+    help_menu_edit("!slime", "A command that fires the slime guns at a user. (Reservered for Momager)")
     log("Slime gun plugin loaded!")
 
 allowed_users = [993653933148995604, 837119081790046228, 886878726686666752, "dlKLOPw4", "AYNqMeG4", "4oxKNYnd"]

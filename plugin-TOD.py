@@ -5,6 +5,7 @@ from xander_plugin import *
 truthlist = []
 darelist = []
 def onload():
+    help_menu_edit("Truth or dare plugin", "A plugin that adds the !dare and !truth commands.")
     global truthlist
     global darelist
 
