@@ -13,6 +13,7 @@ def check(ctx):
 
 async def onmessage(message):
     global user
+    count = 0
     print(message.guild.channels)
     if message.content.startswith("!dmsg "):
         user = message.guild.get_member(int(message.content[6:]))
@@ -21,6 +22,9 @@ async def onmessage(message):
                 if not type(channel) is discord.CategoryChannel:
                     while True:
                         deleted = await channel.purge(check=check)
+                        for msg in deleted:
+                            count += 1
+                        log(f"Deleted {count} messages so far")
                         if deleted == []:
                             break
             await message.channel.send("Purged all messages from given user")
