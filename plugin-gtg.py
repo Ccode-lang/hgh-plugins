@@ -1,5 +1,3 @@
-import robospeak as rs
-
 from xander_plugin import *
 
 def onload():
