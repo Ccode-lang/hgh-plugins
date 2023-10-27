@@ -35,4 +35,4 @@ async def onmessage(message):
 
 
 def onexit():
-    log("Echo plugin exit run.")
+    log("Pew pew plugin exit run.")
