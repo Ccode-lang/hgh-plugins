@@ -3,7 +3,7 @@ from xander_plugin import *
 
 def onload():
     help_menu_edit("!bread", "A command that fires the bread guns at a user. (Reservered for Tweens)")
-    log("Slime gun plugin loaded!")
+    log("Bread gun plugin loaded!")
 
 allowed_role = 1221834669373521951
 async def onmessage(message):
