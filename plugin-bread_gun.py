@@ -9,10 +9,7 @@ allowed_role = 1221834669373521951
 async def onmessage(message):
     if message.content.startswith("!bread ") and checkroles(message.author, message):
         try:
-            if config.platform == "discord":
-                await message.channel.send(f"{message.mentions[0].mention} was breaded!")
-            else:
-                await message.channel.send(f"{message.mentions[0].name} was breaded!")
+            await message.channel.send(f"{message.mentions[0].mention} was breaded!")
             return False
         except:
             return True

@@ -17,12 +17,8 @@ async def onmessage(message):
     dname = str(message.author.id)
     if message.content.startswith("!shoot "):
         hit = bool(random.getrandbits(1))
-        if config.platform == "discord":
-            author = message.author.mention
-            mention = message.mentions[0].mention
-        else:
-            author = message.author.name
-            mention = message.mentions[0].name
+        author = message.author.mention
+        mention = message.mentions[0].mention
         if hit == True:
             await message.channel.send(f"{author} shot {mention} with a nerf gun!")
             pscore = db.read_point(dname, "pewscore")
